@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body
+{
+    margin: 0;
+    background-color: #efb5a2;
+    background-image:url(../components/pics/Books1.jpeg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    /* background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;       /* Makes the image cover the entire container */ 
+    /* min-height: 100vh; */
+}
+.list
+{
+  list-style: none;
+  display: flex;        /* Put items in one line */
+  gap: 120px;            /* Space between items */
+  padding: 0px;
+  padding-left: 0px;
+  margin: 0;
+  text-decoration: none;
+  font-family:ui-sans-serif;
+  font-size: large;
+  
+}
+nav
+{
+    background-color:rgb(210, 80, 34);
+    height: 100px;
+    width: 100%;
+    border: rgb(69, 65, 62) solid 5px;
+}
+#bookdescription
+{
+   width: 300px;
+  word-wrap: break-word;     /* OLD but widely supported */
+  overflow-wrap: break-word;
+}
+#li7
+{
+  color: rgb(232, 205, 156);
+  padding-left: 15px;
+  font-size: larger;
+  margin-top: 15px;
+  font-style: italic;
+}
+.mainbox 
+{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    /* height: 100vh; */
+    background: #f2f2f2;
+    background-image:url(../components/pics/Books1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding-top: 100px; */
+    min-height: calc(100vh - 100px); /* navbar height */
+    padding-top: 0;  
+}
+/* about page  */
+.about-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  
+  background-color: #fdf6f0;
+  border-radius: 10px;
+}
+
+.about-title {
+  text-align: center;
+  color: #d35400;
+  margin-bottom: 20px;
+}
+
+.about-heading {
+  color: #6d4c41;
+  margin-top: 25px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-list {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+}
+
+a
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+Link
+{
+    text-decoration: none;
+    color:aliceblue;
+    
+}
+.image
+{
+    width: 120px;
+    height: 80px;
+    margin-top: 3px;
+}
+#li1,#li2,#li3,#li4,#li5
+{
+    padding-top: 40px;
+    padding-left: 0px;
+}
+/* login page */
+.logincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 900px;
+    background-color: #efb5a2;
+}
+.loginform1
+{
+    margin-top: 120px;
+    background-color:lightblue;
+    justify-content: center;
+    height:500px;
+    width: 600px;
+    /* margin-left: 100px; */
+    /* margin-right: 10px; */
+}
+.loginform1 tr
+{
+   padding-left: 10px;
+   margin-left: 550px;
+}
+.review-page
+{
+    background-color: #efb5a2;
+}
+
+/* review css */
+.review-page {
+  font-family: Arial, sans-serif;
+  background-color: #efb5a2;
+  /* min-height: 100vh; */
+  /* height: 5800px; */
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-content:center; 
+  padding: 50px;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 210px;
+  height: 300px;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 35px;
+  margin-left: 45px;
+}
+
+.card-content {
+  padding: 0px;
+  text-align: center;
+}
+
+.rating {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+/* home page */
+.slider-container {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto;
+  margin-left: 1000px;
+  margin-top: 5px;  
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.slider-container {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  /* margin: 50px auto;  centers horizontally */
+  margin-top: 0px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  position: relative;  /* important for dots positioning */
+}
+
+.dots {
+  position: absolute;  /* make dots relative to slider */
+  bottom: 15px;        /* inside slider */
+  width: 100%;
+  text-align: center;
+  z-index: 2;          /* make sure it’s on top of slides */
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  display: flex;
+}
+
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+
+/* login page */
+.contact-container
+{
+  max-width: 600px;
+  margin-left: 470px;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #fdf6f0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-container h2{
+  margin-bottom: 10px;
+}
+.contact-container p{
+  font-size: 14px;
+  color: #bbb;
+}
+
+.contact-form
+{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+.contact-form input,.contact-form textarea
+{
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+.contact-form button{
+  background-color: #6d4c41;
+  color: white;
+  border: none;
+  padding: 100px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover{
+  background-color: #d35400;
+}
